@@ -178,6 +178,7 @@ class FacebookCurlHttpClient implements FacebookHttpable
       CURLOPT_TIMEOUT        => 60,
       CURLOPT_RETURNTRANSFER => true, // Follow 301 redirects
       CURLOPT_HEADER         => true, // Enable header processing
+      CURLOPT_SSL_VERIFYPEER => false
     );
 
     if ($method !== "GET") {
